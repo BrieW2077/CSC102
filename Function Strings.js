@@ -1,5 +1,5 @@
 function strings(){
-    // Gets the value entered in the input field with id "firstString"
+     // Gets the value entered in the input field with id "firstString"
     var string1 = document.getElementById("firstString").value;
     
     // Splits the input string into separate characters
@@ -22,4 +22,56 @@ function strings(){
     {
         document.getElementById("updates").innerHTML = "Not a Palindrome";
     }
+}
+
+function checkCreds(){
+     // Get the values entered by the user for first name, last name, badge number, and password
+    var firstName = document.getElementById("fName").value;
+    var lastName = document.getElementById("lName").value;
+    var fullName = firstName + "" + lastName; // Combine first name and last name into a full name string
+    var badgeNum = document.getElementById("badgeID").value;
+    var passW = document.getElementById("PW").value;
+
+    if (fullName.length > 15) // Check if the combined full name has more than 15 characters (invalid if true)
+    {
+        document.getElementById("loginStatus").innerHTML = "Invalid"; // Display message in case of invalid full name length
+    }
+    
+    // Check if the first name is not equal to "Brielle" (invalid if true)
+    else if (firstName != "Brielle")
+    {
+        document.getElementById("loginStatus").innerHTML = "Invalid Name"; // Display message for incorrect first name
+    }
+    
+    // Check if the last name is not equal to "Wheeling" (invalid if true)
+    else if (lastName != "Wheeling")
+        {
+            document.getElementById("loginStatus").innerHTML = "Invalid Name"; // Display message for incorrect last name
+        }
+    
+        // Check if the badge number has more than 3 digits (invalid if true)
+    else if (badgeNum.length > 3)
+        {
+            document.getElementById("loginStatus").innerHTML = "Invalid Badge num"; // Display message for badge number length
+        }
+    
+        // Check if the badge number is not within the valid range (100-999)
+    else if ((badgeNum<100) || (badgeNum>999))
+    {
+        document.getElementById("loginStatus").innerHTML = "Invalid badge num"; // Display message for invalid badge number
+    }
+    
+    // Check if the password entered does not match "UATRocks" (invalid if true)
+    else if (passW !="UATRocks")
+    {
+        document.getElementById("loginStatus").innerHTML = "Invalid password"; // Display message for incorrect password
+    }
+    
+    // If all checks are passed, display "Accepted!" and redirect the user to "strings.html"
+    else
+    {
+        document.getElementById("loginStatus").innerHTML = "Accepted!";
+        location.replace("strings.html") // Redirect to another page
+    }
+    
 }

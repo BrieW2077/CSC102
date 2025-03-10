@@ -7,21 +7,23 @@
     <script src = "Function Strings.js"></script>
     <!-- Title og the webpage-->
     <title>Strings</title>
+    <link rel="stylesheet" href="Strings Design.css">
 </head>
 <body>
     <!-- Main Heading of the page-->
-    <h1> Is it a Palindrome? </h1>
+    <h1> Is it a Palindrome?</h1>
+    <br>
     <!-- Form where user can input a word and check if it's a palindrome-->
     <form id = " stringInput" onsubmit = "return false">
 
         <!-- First string's Lable and Input field-->
-        String 1: <input type = "text" id = "firstString"/>
-
+        Word : <input type = "text" id = "firstString"/>
+        <br> <br>
         <!-- When clicked button triggers the JavaScript function "strings()"-->
         <input type = "submit" onclick = "strings();"/>
 
     </form>
     <!-- Paragraph element that displays the results/Answer-->
-    <p id = "updates" > Andswer </p>
+    <p id = "updates" ></p>
 </body>
 </html>

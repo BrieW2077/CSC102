@@ -1,0 +1,25 @@
+/* Set the background gradient*/
+html{
+    background: linear-gradient(90deg,rgb(3, 21, 121), rgb(149, 251, 255));
+    color:rgb(255, 255, 255)
+}
+
+/* Style the body*/
+body{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 200px;
+}
+
+/* Style for the heading h1 */
+h1{
+    margin: 50px; 
+    font-family: "Lobster"; 
+    text-shadow: 5px 0 #0038d3; /* Adds a shadow to the text*/
+    font-size: 42px; 
+    color: rgb(157, 232, 255); /* Main color of the heading*/
+    text-align: center; 
+    margin: auto;
+ }
+
