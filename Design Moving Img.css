@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+button {
+    font-size: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#goButton {
+    background-color: #68ffb4;
+    color: rgb(4, 185, 101);
+}
+
+#stopButton {
+    background-color: #ff8787;
+    color: rgb(197, 53, 34);
+}
+
+#cat {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width: 500px;
+}
